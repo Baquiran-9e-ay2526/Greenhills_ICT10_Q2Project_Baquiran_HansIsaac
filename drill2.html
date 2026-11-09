@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Cadet Corps - Set Operators</title>
+
+    <style>
+        body {
+            background-color: #f4f6f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #1b2414;
+        }
+
+        .cadet-header {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 800;
+            color: #2b3a1a;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .cadet-input {
+            background-color: #e8ece1;
+            border: 2px solid #556b2f;
+            color: #1b2414;
+            border-radius: 6px;
+        }
+
+        .cadet-input:focus {
+            background-color: #ffffff;
+            border-color: #8b8000;
+            box-shadow: 0 0 0 0.25rem rgba(139, 128, 0, 0.25);
+        }
+
+        .btn-cadet {
+            background-color: #3b4e24;
+            border: 2px solid #2b3a1a;
+            color: #ffffff;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 6px;
+        }
+
+        .btn-cadet:hover {
+            background-color: #4b642e;
+            color: #ffd700;
+        }
+
+        #output > py-terminal, 
+        #output {
+            margin-top: 15px;
+        }
+
+        #output {
+            background-color: #2b3a1a; 
+            color: #7cfc00; 
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 8px solid #ffd700; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.05rem;
+            min-height: 250px;
+        }
+    </style>
+</head>
+<body class="container mt-5" style="max-width: 750px;">
+
+    <h2 class="cadet-header mb-4">🪖 Add new cadet member:</h2>
+
+    <div class="mb-3">
+        <input type="text" id="1name" class="form-control cadet-input" placeholder="First Name">
+    </div>
+
+    <div class="mb-3">
+        <input type="text" id="2name" class="form-control cadet-input" placeholder="Last Name">
+    </div>
+
+    <button class="btn btn-cadet px-4 py-2 mb-4" py-click="add_member">Submit</button>
+
+    <div id="output"></div>
+
+    <py-script src="drill2.py"></py-script>
+</body>
+</html>
